@@ -1,0 +1,17 @@
+.body {
+  padding: 20px;
+  width: 82%;
+  height: 100%;
+  overflow: auto;
+}
+.body .bottom {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .body .bottom {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Body.css.map */

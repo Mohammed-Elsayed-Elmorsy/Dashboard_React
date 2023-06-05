@@ -1,0 +1,113 @@
+.listings{
+    width: 49%;
+    @media(max-width:991px){
+        width: 100%;
+    }
+    h2{
+        margin: 15px 0;
+        font-weight: 500;
+        color: rgb(67, 66, 66);
+    }
+    .listings-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        gap: 10px;
+        .listings-content-item{
+            position: relative;
+            .listings-content-item-icon{
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                color: rgb(18, 112, 235);
+            }
+            .listings-content-item-image{
+                width: 150px;
+                height: 150px;
+                border-radius: 7px;
+                background-color: red;
+                @media(max-width:768px){
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            h5{
+                color: rgb(85, 84, 84);
+                margin: 8px 0;
+                padding-left: 7px;
+            }
+        }
+    }
+    .listings-details{
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        @media(max-width:1200px){
+            flex-direction: column;
+        }
+        .top-seller{
+            // margin-bottom: 10px;
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            @media(max-width:991px){
+                flex-direction: column;
+            }
+            border-radius: 8px;
+            justify-content: space-between;
+            .images{
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    padding: 3px;
+                    background-color: #eee;
+                }
+            }
+            .info{
+                padding-left:7px ;
+                h4{
+                    font-size: 15px;
+                }
+                div{
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .feattured-seller{
+            @media(max-width:991px){
+                flex-direction: column;
+            }
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            border-radius: 8px;
+            justify-content: space-between;
+        }
+        .images{
+            padding-right:5px;
+            border-right:  1px solid #ddd;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                padding: 3px;
+                background-color: #eee;
+            }
+        }
+        .info{
+            padding-left:7px ;
+            h4{
+                font-size: 15px;
+            }
+            div{
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

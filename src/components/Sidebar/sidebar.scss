@@ -1,0 +1,153 @@
+.sidebar{
+    position: relative;
+    z-index: 555;
+    height:100%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 18%;
+    @media(max-width:768px){
+        width: 25%;
+        // padding: 5px;
+    }
+    box-shadow: 0 0 7px rgb(192, 190, 190);
+    padding: 15px;
+    overflow: scroll;
+    a{
+        display: block;
+        padding: 10px 8px;
+        width: 100%;
+        transition: 0.3s;
+        color: rgb(99, 98, 98);
+        &:hover{
+            background-color: #eee;
+            // border-bottom: 1px solid black;
+        }
+        @media(max-width:768px){
+        font-size: 11px;
+    }
+    }
+    h3{
+        font-size: 17px;
+        padding: 10px 8px;
+        @media(max-width:991px){
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    ul{
+        li{
+            position: relative;
+            margin: 19px 0;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 8px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                height: 0%;
+                right: -15px;
+                background-color: rgb(2, 137, 228);
+                bottom: 0;
+                transition: 0.3s;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 8px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                height: 0%;
+                left: -15px;
+                background-color: rgb(2, 137, 228);
+                top: 0;
+                transition: 0.3s;
+            }
+            &:hover::after{
+                height: 100%;
+            }
+            &:hover::before{
+                height: 100%;
+            }
+        }
+    }
+    .logoDiv{
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        h2{
+            color: rgb(12, 152, 207);
+            font-size: 18px;
+        }
+    }
+    .quick-menu{
+        margin-top: 19px;
+        
+    }
+
+    .sidebar-card{
+        position: relative;
+        z-index: 1000;
+        // overflow: hidden;
+        margin-top: 45px;
+        border-radius: 8px;
+        padding: 5px;
+        color: white;
+        text-align: center;
+        background-color: rgb(13, 186, 209);
+        @media(max-width:991px){
+            display: none;
+        }
+        .card-icon{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -25px;
+            border-radius: 50%;
+            padding: 4px;
+            background-color: white;
+            color: black;
+        }
+        h3{
+
+            margin-top: 10px;
+        }
+        p{
+            line-height: 1.3;
+        }
+        button{
+            transition: 0.3s;
+            margin: 10px 0;
+        }
+        .circle1,.circle2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            opacity: 0.7;
+            
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            z-index: -1;
+        }
+        .circle1{
+            top: -50px;
+            left: -50px;
+        }
+        .circle2{
+            right: -50px;
+            bottom: -50px;
+        }
+    }
+}
+

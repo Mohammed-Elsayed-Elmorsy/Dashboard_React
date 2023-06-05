@@ -1,0 +1,43 @@
+.recent{
+    width: 50%;
+    @media(max-width:991px){
+        width: 100%;
+    }
+    h2{
+        margin: 15px 0;
+        font-weight: 500;
+        color: rgb(67, 66, 66);
+    }
+    .recent-content{
+        .recent-item{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .recent-item-content{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    padding: 7px;
+                    background-color: rgb(255, 255, 255);
+                    margin-right: 10px;
+                }
+                .recent-item-info{
+                    h4{
+                        
+                        margin-bottom: 4px;
+                    }
+                    p{
+    
+                    }
+                }
+            }
+            span{
+                color: gray;
+            }
+        }
+    }
+}

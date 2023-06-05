@@ -1,0 +1,216 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  header {
+    left: 120px;
+  }
+}
+header .welcome h3 {
+  font-size: 18px;
+}
+header .welcome p {
+  color: rgb(105, 104, 104);
+  margin-top: 7px;
+}
+header .input-container {
+  width: 34%;
+  position: relative;
+}
+@media (max-width: 991px) {
+  header .input-container {
+    display: none;
+  }
+}
+header .input-container input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+}
+header .input-container .search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .profile {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  header .profile {
+    display: none;
+  }
+}
+header .profile .top-icon {
+  font-size: 19px;
+  color: rgb(24, 124, 238);
+  margin-right: 12px;
+  padding: 5px 5px 2px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .profile .top-icon:hover {
+  background-color: #ddd;
+}
+header .profile .profile-image img {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+}
+header .profile-mobile {
+  z-index: 1000;
+  transition: 0.3s;
+  position: absolute;
+  right: 44px;
+  top: 44px;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  border-radius: 8px;
+}
+header .profile-mobile.show {
+  width: 200px;
+  height: 170px;
+}
+header .profile-mobile .top-icon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: rgb(24, 124, 238);
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 23px;
+  transition: 0.3s;
+}
+header .profile-mobile .top-icon:hover {
+  background-color: #ddd;
+}
+header .profile-mobile .profile-image {
+  padding: 0 4px;
+  margin: 0 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+header .profile-mobile .profile-image:hover {
+  background-color: #ddd;
+}
+header .profile-mobile .profile-image img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: 5px;
+  border: 2px solid rgb(10, 104, 212);
+}
+header .ellipsis {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+  font-size: 18px;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  z-index: 10000;
+  color: rgb(12, 130, 209);
+}
+header .ellipsis:hover {
+  background-color: #ddd;
+}
+@media (max-width: 768px) {
+  header .ellipsis {
+    display: inline-block;
+  }
+}
+
+.landing {
+  margin: 30px 0;
+  height: 350px;
+  position: relative;
+}
+.landing video {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+.landing .landing-title {
+  z-index: 60;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 20%;
+}
+@media (max-width: 768px) {
+  .landing .landing-title {
+    top: 7%;
+  }
+}
+.landing .landing-title h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+.landing .landing-title p {
+  color: white;
+}
+.landing .control {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  position: absolute;
+  z-index: 60;
+  gap: 20px;
+  display: flex;
+}
+.landing .control button {
+  transition: 0.3s;
+  padding: 15px 15px;
+  width: 120px;
+}
+@media (max-width: 768px) {
+  .landing .control button {
+    padding: 10px;
+    width: 100px;
+    font-size: 12px;
+  }
+}
+.landing .control button:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.landing .control button:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+.landing .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  z-index: 55;
+  border-radius: 15px;
+}/*# sourceMappingURL=top.css.map */

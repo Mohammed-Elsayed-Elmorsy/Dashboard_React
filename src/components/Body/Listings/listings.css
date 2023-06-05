@@ -1,0 +1,116 @@
+.listings {
+  width: 49%;
+}
+@media (max-width: 991px) {
+  .listings {
+    width: 100%;
+  }
+}
+.listings h2 {
+  margin: 15px 0;
+  font-weight: 500;
+  color: rgb(67, 66, 66);
+}
+.listings .listings-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.listings .listings-content .listings-content-item {
+  position: relative;
+}
+.listings .listings-content .listings-content-item .listings-content-item-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: rgb(18, 112, 235);
+}
+.listings .listings-content .listings-content-item .listings-content-item-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 7px;
+  background-color: red;
+}
+@media (max-width: 768px) {
+  .listings .listings-content .listings-content-item .listings-content-item-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+.listings .listings-content .listings-content-item h5 {
+  color: rgb(85, 84, 84);
+  margin: 8px 0;
+  padding-left: 7px;
+}
+.listings .listings-details {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .listings .listings-details {
+    flex-direction: column;
+  }
+}
+.listings .listings-details .top-seller {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .listings .listings-details .top-seller {
+    flex-direction: column;
+  }
+}
+.listings .listings-details .top-seller .images img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #eee;
+}
+.listings .listings-details .top-seller .info {
+  padding-left: 7px;
+}
+.listings .listings-details .top-seller .info h4 {
+  font-size: 15px;
+}
+.listings .listings-details .top-seller .info div span {
+  font-size: 14px;
+}
+.listings .listings-details .feattured-seller {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .listings .listings-details .feattured-seller {
+    flex-direction: column;
+  }
+}
+.listings .listings-details .images {
+  padding-right: 5px;
+  border-right: 1px solid #ddd;
+}
+.listings .listings-details .images img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #eee;
+}
+.listings .listings-details .info {
+  padding-left: 7px;
+}
+.listings .listings-details .info h4 {
+  font-size: 15px;
+}
+.listings .listings-details .info div span {
+  font-size: 14px;
+}/*# sourceMappingURL=listings.css.map */
